@@ -1,0 +1,32 @@
+<h1 class="text-center"> Product Management Services </h1>
+<nav class="navbar navbar-expand-sm navbar-dark">
+  <ul class = "navbar-nav">
+      <li class = "nav-item">
+          <a routerLink="/add-component" routerLinkActive="active" class="nav-link" > Add Product </a>
+      </li>
+      <li class = "nav-item">
+          <a routerLink="/update-component" routerLinkActive="active" class="nav-link" > Update Product </a>
+      </li>
+      <li class = "nav-item">
+        <a routerLink="/delete-component" routerLinkActive="active" class="nav-link" > Delete Product </a>
+    </li>
+    <li class = "nav-item">
+      <a routerLink="/fetch-component" routerLinkActive="active" class="nav-link" > View Product List </a>
+  </li>
+  </ul>
+</nav>
+<div class = "container">
+  <router-outlet></router-outlet>
+</div>
+<div class="col-md-6 offset-md-3">
+    <h3> Delete Product </h3>
+    <form #deleterecord="ngForm" (ngSubmit)="deleteproduct(deleterecord)">
+
+        <div class="form-group">
+            <label> Product ID </label>
+            <input type="text" #product_id (ngModel)="product_id" class="form-control" name="product_id" id="product_id">
+        </div>
+        <br>
+        <button class = "btn btn-success"  type ="Submit">Delete</button>
+     </form>
+</div> 

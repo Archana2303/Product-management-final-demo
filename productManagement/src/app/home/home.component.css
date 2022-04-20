@@ -1,0 +1,25 @@
+.home img
+{
+    width: 50%;
+    height: 500px;
+    object-position: center;
+    object-fit: cover;
+    float :left
+}
+p
+{
+    margin: 50px;
+    padding-left: 900px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: x-large;
+    font-style: italic;
+    color: rgb(20, 21, 21);
+}
+div img
+{
+    padding-top: 20px;
+    width: 70%;
+    height: 500px;
+    object-position: center;
+    padding-left: 500px;
+}
